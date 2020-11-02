@@ -1,0 +1,11 @@
+.boxDiv{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#navBox h3{
+    position: absolute;
+    top:0.2vh !important;
+}

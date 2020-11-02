@@ -1,0 +1,14 @@
+.mainCardContainer{
+    display: flex;
+    flex-direction: column;
+    z-index: -10;
+   
+    
+}
+.firstRow,.secondRow,.thirdRow{
+    display: flex;
+    justify-content: space-around;
+   
+  
+}
+
