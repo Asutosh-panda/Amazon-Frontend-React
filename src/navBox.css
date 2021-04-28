@@ -9,3 +9,20 @@
     position: absolute;
     top:0.2vh !important;
 }
+
+@media screen and (max-width: 1010px) {
+    .boxDiv h3 {
+      font-size: 1rem;
+    }
+    .cart{
+       font-size: 1.8rem;
+    }
+  }
+  @media screen and (max-width:750px)
+  {
+      .boxDiv{
+          display: none;
+    
+      }
+     
+  }

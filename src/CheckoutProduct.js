@@ -6,7 +6,7 @@ import CheckoutSubtotalDiv from "./CheckoutSubtotalDiv"
 
 
 const CheckoutProduct=()=>{
-    
+    document.body.style.transform="scale(1)"
 const [ar,items,pkey]=useContext(cardContext)
 const [cardArray,setcardArray]=ar
 const [productKey,setKey]=pkey
@@ -39,6 +39,7 @@ catch{}
     {mapar}
     </>
 }
+
 
 
 export default CheckoutProduct

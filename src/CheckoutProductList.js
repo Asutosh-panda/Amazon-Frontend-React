@@ -55,20 +55,16 @@ const CheckoutProductList=({name,desc,price,src,quantity,keys})=>{
     return <>
            <div className={`product${keys}`}>
          <div className="checkoutProduct">
-         <img src={src} alt="logo" style={{height:"15vh"}}/>
+         <img src={src} alt="logo" style={{height:"18vmin"}}/>
          <div className="details">
          <h2>{name}</h2>
          <h4>{desc}</h4>
          </div>
-         <h2>RS.{price}</h2>
-         <div className="quant">
-         <h3>{quantity} items</h3>
+         <h2 id="priceCheckoutList">RS.{price}</h2> 
          <div className="addDelete">
          <Button style={{color:"red"}}><button style={{fontSize:"1.5"}} id={keys} onClick={delFun}>-</button></Button>
+         <h3 style={{padding:"15px"}}>{quantity} </h3>
       <Button style={{color:"green"}}> <button  id={keys} onClick={AddFun}>+</button></Button>
-  
-
-         </div>
          </div>
          </div>
        

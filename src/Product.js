@@ -46,14 +46,10 @@ const Product=({name,desc,src,price,keyId})=>{
         }
         
     }
-    useEffect(()=>{
-       
-
-})
     return <div className="productDiv">
-                 <h1>{name}</h1>
-                 <p>{desc}</p>
-                 <img src={src} alt="" style={{height:"15vh"}}/>
+                 <h1 >{name}</h1>
+                 <p style={{fontSize:"0.9rem"}}>{desc}</p>
+                 <img src={src} alt="" style={{height:"15vmin"}}/>
                  <h2>Rs.{price}</h2>
                  <button id={keyId} onClick={clickFunction}>Add to Cart</button>
             </div>

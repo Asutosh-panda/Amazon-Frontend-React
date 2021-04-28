@@ -13,7 +13,7 @@ const App=()=>{
     <CardList>
            <Nav/>
           <Switch>
-              <Route exact path="/" component={Home}/>
+              <Route exact path="/AmazonClone-React" component={Home}/>
               <Route  exact path="/checkout" component={CheckoutPage}/>
           </Switch>
           </CardList>

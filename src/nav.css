@@ -6,10 +6,11 @@
 }
 #amazonImg{
     height: 5vh;
-    width: 8vw;
+    width: 11vh;
     
     
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -20,8 +21,7 @@ nav{
     padding: 5px;
     color: white;
    z-index:2;
-    position: sticky;
-    top: 0;
+   
 }
 .cart{
     color:#fabf0f;
@@ -30,7 +30,147 @@ nav{
    
 }
 input{
-    width: 50vw;
+    width: 45vw;
     height:4vh;
     border-radius: 5px;
 }
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition:all 0.5s ease-in-out ;
+}
+.burger1,.burger2,.burger3
+{
+    background-color:yellow;
+    height: 3px;
+    width: 3vh;
+}
+.burger2{
+      transform: translateY(-10px);
+}
+.burger3{
+    transform: translateY(1px);
+}
+.open{
+    transform: translateX(57vw);
+   
+}
+.open .burger1{
+         transform: translateX(-10vw);
+         opacity: 0;
+}
+.open .burger2{
+    transform: rotate(45deg);
+    background-color:black;
+ 
+}
+.open .burger3{
+    transform: rotate(-36deg) translateY(-3px);
+    background-color: black;
+}
+.navSlide a{
+    padding: 8px 8px 8px 32px;
+    
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: black;
+    display: block;
+    transition: 0.1s ;
+   
+}
+
+
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navSlide{
+    height: auto;
+    width: 0vw;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+   
+}
+.navSlide{
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  
+}
+.search{
+    display: flex;
+}
+.totalDiv{
+    position:sticky;
+    top:0;
+    z-index: 4;
+}
+@media screen and (max-width:750px)
+{
+    .burger{
+        display: inline;
+        cursor: pointer;
+        transition:all 0.5s ease-in-out ;
+    }
+       #flag
+        {
+            display: none;
+        }
+        input{
+            height: 3vh;
+            width: 50vw;
+        }
+        .cart{
+            transform: scale(0.9);
+        }
+        nav{
+            display: grid;
+            grid-template-columns: 5% 65% 6%;
+            grid-column-gap:10px ;
+        }
+        form{
+            order:1;
+            grid-column-start: 2;
+            justify-self: center;
+        }
+        input{
+            width: 56vw;
+            height: 2.6vh;
+        }
+    .search{
+        order: 1;
+        grid-column-start: 2;
+    }
+        .open{
+            transform: translateX(55vw);
+           
+        }
+        .open .burger1{
+                 transform: translateX(-10vw);
+                 opacity: 0;
+        }
+        .open .burger2{
+            transform: rotate(45deg);
+         
+        }
+        .open .burger3{
+            transform: rotate(-36deg) translateY(-3px);
+        }
+        .navSlide a{
+            padding: 8px 8px 8px 32px;
+            
+            text-decoration: none;
+            font-size: 2.5vh;
+            color: black;
+            display: block;
+            transition: 0.1s ;
+           
+        }
+      
+} 
