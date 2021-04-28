@@ -1,6 +1,8 @@
-This ia a Frontend clone of the Amazon app using React and hosted on Firebase .
+# This is a frontend clone of Amazon website using React and hosted using firebase
 
-link -> https://clonereact-f7055.web.app/AmazonClone-React
+### Link -> https://clonereact-f7055.web.app/AmazonClone-React
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
